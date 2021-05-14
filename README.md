@@ -14,7 +14,7 @@ Vastaus: SELECT DISTINCT kurssi FROM kurssisuoritus
 ## Tehtävä 7
 Vastaus: SELECT * FROM Opiskelija WHERE nimi = 'Anna'
 ## Tehtävä 8
-Vastaus: SELECT arvosana FROM kurssisuoritus WHERE opiskelija = 'Pihla'
+Vastaus: SELECT * FROM kurssisuoritus WHERE opiskelija = '999999'
 ## Tehtävä 9
 Vastaus: SELECT DISTINCT pääaine FROM Opiskelija WHERE pääaine LIKE '%tiede%'. Jos laittaa "LIKE" tilalle "NOT LIKE" siellä näkyy vain ne jossa ei ole sanaa tiede.
 ## Tehtävä 10
