@@ -22,4 +22,6 @@ Vastaus: SELECT Kurssi.nimi, Kurssisuoritus.päivämäärä, Kurssisuoritus.arvo
 ## Tehtävä 11
 Vastaus: SELECT Opiskelija.nimi, Kurssisuoritus.päivämäärä, Kurssisuoritus.arvosana FROM Opiskelija, Kurssisuoritus WHERE Opiskelija.opiskelijanumero = Kurssisuoritus.opiskelija
 ## Tehtävä 12
-Vastaus: 
+Vastaus: SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Tehtävä, Kurssitehtävä WHERE Kurssi.kurssitunnus = Kurssitehtävä.kurssi AND Tehtävä.tunnus = Kurssitehtävä.tehtävä
+## Tehtävä 13
+Vastaus: SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Tehtävä, Kurssitehtävä, Tehtäväsuoritus, Opiskelija WHERE Opiskelija.nimi = 'Anna' AND Kurssi.kurssitunnus = Kurssitehtävä.kurssi AND Tehtävä.tunnus = Kurssitehtävä.tehtävä AND Kurssitehtävä.tunnus = Tehtäväsuoritus.tehtävä AND Opiskelija.opiskelijanumero = Tehtäväsuoritus.opiskelija
