@@ -18,4 +18,8 @@ Vastaus: SELECT * FROM kurssisuoritus WHERE opiskelija = '999999'
 ## Tehtävä 9
 Vastaus: SELECT DISTINCT pääaine FROM Opiskelija WHERE pääaine LIKE '%tiede%'. Jos laittaa "LIKE" tilalle "NOT LIKE" siellä näkyy vain ne jossa ei ole sanaa tiede.
 ## Tehtävä 10
+Vastaus: SELECT Kurssi.nimi, Kurssisuoritus.päivämäärä, Kurssisuoritus.arvosana FROM Kurssi, Kurssisuoritus WHERE Kurssi.kurssitunnus = Kurssisuoritus.kurssi
+## Tehtävä 11
+Vastaus: SELECT Opiskelija.nimi, Kurssisuoritus.päivämäärä, Kurssisuoritus.arvosana FROM Opiskelija, Kurssisuoritus WHERE Opiskelija.opiskelijanumero = Kurssisuoritus.opiskelija
+## Tehtävä 12
 Vastaus: 
