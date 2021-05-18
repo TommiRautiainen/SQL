@@ -25,3 +25,7 @@ Vastaus: SELECT Opiskelija.nimi, Kurssisuoritus.päivämäärä, Kurssisuoritus.
 Vastaus: SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Tehtävä, Kurssitehtävä WHERE Kurssi.kurssitunnus = Kurssitehtävä.kurssi AND Tehtävä.tunnus = Kurssitehtävä.tehtävä
 ## Tehtävä 13
 Vastaus: SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Tehtävä, Kurssitehtävä, Tehtäväsuoritus, Opiskelija WHERE Opiskelija.nimi = 'Anna' AND Kurssi.kurssitunnus = Kurssitehtävä.kurssi AND Tehtävä.tunnus = Kurssitehtävä.tehtävä AND Kurssitehtävä.tunnus = Tehtäväsuoritus.tehtävä AND Opiskelija.opiskelijanumero = Tehtäväsuoritus.opiskelija
+## Tehtävä 14
+Vastaus: Toinen kysely kysyy oppilaitten nimiä joten sen takia siinä on 5 riviä.
+## Tehtävä 15
+Vastaus: 
