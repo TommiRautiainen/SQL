@@ -28,6 +28,6 @@ Vastaus: SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, 
 ## Tehtävä 14
 Vastaus: Toinen kysely kysyy oppilaitten nimiä joten sen takia siinä on 5 riviä.
 ## Tehtävä 15
-Vastaus: SELECT kurssitunnus FROM Kurssi k LEFT JOIN Tehtävä t ON k.nimi = t.nimi WHERE t.tunnus IS null
+Vastaus: SELECT * FROM Kurssi k LEFT JOIN Kurssitehtävä t ON k.kurssitunnus = t.kurssi WHERE t.kurssi IS null
 ## Tehtävä 16
-Vastaus:
+Vastaus: 
