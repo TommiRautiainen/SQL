@@ -30,5 +30,4 @@ Vastaus: Toinen kysely kysyy oppilaitten nimiä joten sen takia siinä on 5 rivi
 ## Tehtävä 15
 Vastaus: SELECT * FROM Kurssi k LEFT JOIN Kurssitehtävä t ON k.kurssitunnus = t.kurssi WHERE t.kurssi IS null
 ## Tehtävä 16
-Vastaus: SELECT kurssi, COUNT(*) AS lukumäärä FROM Kurssisuoritus GROUP BY kurssi
-
+Vastaus: SELECT kurssi AS kurssikoodi, COUNT(*) AS lukumäärä FROM Kurssisuoritus GROUP BY kurssi
