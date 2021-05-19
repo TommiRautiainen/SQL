@@ -32,4 +32,8 @@ Vastaus: SELECT * FROM Kurssi k LEFT JOIN Kurssitehtävä t ON k.kurssitunnus = 
 ## Tehtävä 16
 Vastaus: SELECT kurssi AS kurssikoodi, COUNT(*) AS lukumäärä FROM Kurssisuoritus GROUP BY kurssi
 ## Tehtävä 17
-Vastaus:
+Vastaus: SELECT k.nimi AS kurssi, COUNT(*) AS lukumäärä FROM Kurssisuoritus ks, Kurssi k WHERE k.kurssitunnus = ks.kurssi GROUP BY k.nimi
+## Tehtävä 18
+Vastaus: SELECT k.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k LEFT JOIN Kurssisuoritus ks ON k.kurssitunnus = ks.kurssi GROUP BY k.nimi
+## Tehtävä 19
+Vastaus: 
