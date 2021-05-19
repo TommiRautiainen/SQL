@@ -38,4 +38,6 @@ Vastaus: SELECT k.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k
 ## Tehtävä 19
 Vastaus: CREATE TABLE Kurssi (kurssitunnus, nimi, kuvaus)
 ## Tehtävä 20
+Vastaus: INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus) VALUES ('12345', 'SQL-kielen perusteet', 'SELECT Hei maailma;')
+## Tehtävä 21
 Vastaus: 
