@@ -40,4 +40,22 @@ Vastaus: CREATE TABLE Kurssi (kurssitunnus, nimi, kuvaus)
 ## Tehtävä 20
 Vastaus: INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus) VALUES ('12345', 'SQL-kielen perusteet', 'SELECT Hei maailma;')
 ## Tehtävä 21
-Vastaus: 
+Vastaus: CREATE TABLE Opiskelija ( opiskelijanumero integer, nimi varchar(200), syntymävuosi date, pääaine varchar(50) )
+## Tehtävä 22 
+Vastaus: CREATE TABLE Kurssi (kurssitunnus integer, nimi varchar(50), kuvaus varchar(200))
+## Tehtävä 23
+Vastaus: Tietokantatauluun tulee vain nimi näkyville.
+## Tehtävä 24
+Vastaus: CREATE TABLE Kurssi ( kurssitunnus integer PRIMARY KEY, nimi varchar, kuvaus varchar )
+## Tehtävä 25
+Vastaus: PRAGMA foreign_keys = ON;
+
+CREATE TABLE Tehtävä ( tunnus integer PRIMARY KEY, nimi varchar NOT NULL, kuvaus varchar );
+
+CREATE TABLE Kurssitehtävä ( tunnus integer PRIMARY KEY, tehtävä varchar, kurssi varchar, 
+FOREIGN KEY(tehtävä) REFERENCES Tehtävä (tunnus),
+FOREIGN KEY(kurssi) REFERENCES Kurssi (kurssitunnus) )
+## Tehtävä 26
+Vastaus: ALTER TABLE Tehtävä ADD COLUMN kutsumanimi varchar(50);
+## Tehtävä 27
+Vastaus: ALTER TABLE komennolla voi lisätä, poistaa tai muokata taulua.
